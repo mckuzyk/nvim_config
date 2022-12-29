@@ -1,5 +1,10 @@
 -- [[ Configure Telescope ]]
 -- See `:help telescope` and `:help telescope.setup()`
+
+if not pcall(require, 'telescope') then
+  return
+end
+
 require('telescope').setup {
   defaults = {
     mappings = {
